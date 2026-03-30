@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 async def start(update: Update, context) -> int:
     """Начало диалога: запрос времени."""
-    await update.message.reply_text("На какое время его зарегистрировать к мэру?")
+    await update.message.reply_text("На какое время вас зарегистрировать к мэру?")
     return WAITING_TIME
 
 async def receive_time(update: Update, context) -> int:
